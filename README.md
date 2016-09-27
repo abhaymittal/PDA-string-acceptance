@@ -13,13 +13,13 @@ It is possible to see the intermediate steps in the program.
 ###Input###
 The 7 tuple describing the pushdown automaton tuple:
 
-Q: Set of States
-S: Input alphabet
-SS: Stack alphabet
-q0: Initial automaton state
-z0: Initial stack symbol
-F: set of final states
-T: Transition table	
+- Q: Set of States
+- S: Input alphabet
+- SS: Stack alphabet
+- q0: Initial automaton state
+- z0: Initial stack symbol
+- F: set of final states
+- T: Transition table	
 
 ####Example Automaton Input####
 ```
