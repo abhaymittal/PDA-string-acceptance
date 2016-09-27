@@ -1,34 +1,32 @@
 // Formal push down automata for accepting {ww^R|w in (0+1)^R}
 Q
- qo   q1 q2
+q1 q2
 -----------------------
 S
 0 1 @
 ------------------------
 SS
-0 1 zo
+R B G @
 ---------------------------
 qo 
-qo
+q1
 ------------------------
 zo
-zo
+R
 ------------------------
 F
-q2
+
 -----------------------
 T 
-qo 0 zo = qo 0.zo
-qo 1 zo = qo 1.zo
-qo 0 0 = qo 0.0
-qo 0 1 = qo 0.1
-qo 1 0 = qo 1.0
-qo 1 1 = qo 1.1
-qo @ zo = q1 zo
-qo @ 0 = q1 0
-qo @ 1 = q1 1
-q1 0 0 = q1 @
-q1 1 1 = q1 @
-q1 @ zo = q2 zo
+q1 0 R = q1 B.R
+q1 1 R = q1 G.R
+q1 0 B = q1 B.B ; q2 @
+q1 0 G = q1 B.G
+q1 1 B = q1 G.B
+q1 1 G = q1 G.G ; q2 @
+q2 0 B = q2 @
+q2 1 G = q2 @
+q1 @ R = q2 @
+q2 @ R = q2 @
 
 
